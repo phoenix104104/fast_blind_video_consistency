@@ -20,7 +20,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 1. [Installation](#installation)
 1. [Dataset](#dataset)
 1. [Apply Pre-trained Models](#apply-pre-trained-models)
-1. [Train/Test](#train/test)
+1. [Training and Testing](#training_and_testing)
 1. [Image processing algorithms](#image_processing_algorithms)
 
 ### Introduction
@@ -56,6 +56,6 @@ Download repository:
 ### Apply pre-trained models
 
 
-### Train/Test
+### Training and testing
 
 ### Image processing algorithms
