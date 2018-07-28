@@ -20,8 +20,8 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 1. [Installation](#installation)
 1. [Dataset](#dataset)
 1. [Apply Pre-trained Models](#apply-pre-trained-models)
-1. [Training and Testing](#training_and_testing)
-1. [Image processing algorithms](#image_processing_algorithms)
+1. [Training and Testing](#training-and-testing)
+1. [Image processing algorithms](#image-processing-algorithms)
 
 ### Introduction
 Our method takes the original unprocessed and per-frame processed videos as inputs to produce a temporally consistent video. Our approach is agnostic to specific image processing algorithms applied on the original video.
