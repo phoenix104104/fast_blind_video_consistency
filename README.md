@@ -7,7 +7,7 @@
 [Ersin Yumer](http://www.meyumer.com/), 
 and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 
-European Conference on Computer Vision (ECCV), 2018
+[European Conference on Computer Vision (ECCV), 2018](https://eccv2018.org/)
 
 [[Project page]](http://vllab.ucmerced.edu/wlai24/video_consistency/)[Paper]
 
@@ -18,8 +18,10 @@ European Conference on Computer Vision (ECCV), 2018
 1. [Citation](#citation)
 1. [Requirements and Dependencies](#requirements-and-dependencies)
 1. [Installation](#installation)
-1. [Test Pre-trained Models](#test-pre-trained-models)
-1. [Training](#training)
+1. [Dataset](#dataset)
+1. [Apply Pre-trained Models](#apply-pre-trained-models)
+1. [Train/Test](#train/test)
+1. [Image processing algorithms](#image_processing_algorithms)
 
 ### Introduction
 Our method takes the original unprocessed and per-frame processed videos as inputs to produce a temporally consistent video. Our approach is agnostic to specific image processing algorithms applied on the original video.
@@ -32,17 +34,17 @@ Our method takes the original unprocessed and per-frame processed videos as inpu
 If you find the code and datasets useful in your research, please cite:
     
     @inproceedings{Lai-ECCV-2018,
-    author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Wang, Oliver and Shechtman, Eli and Yumer, Ersin and Yang, Ming-Hsuan}, 
-    title     = {Learning Blind Video Temporal Consistency}, 
-    booktitle = {European Conference on Computer Vision},
-    year      = {2018}
-
+        author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Wang, Oliver and Shechtman, Eli and Yumer, Ersin and Yang, Ming-Hsuan}, 
+        title     = {Learning Blind Video Temporal Consistency}, 
+        booktitle = {European Conference on Computer Vision},
+        year      = {2018}
+    }
     
 
-### Requirements and Dependencies
-- Pytorch 0.4
+### Requirements and dependencies
+- [Pytorch 0.4](https://pytorch.org/)
 
-### Datasets
+### Dataset
 
 
 ### Installation
@@ -51,9 +53,9 @@ Download repository:
     $ git clone https://github.com/phoenix104104/fast_blind_video_consistency.git
 
 
-### Apply Pre-trained Models
+### Apply pre-trained models
 
 
 ### Train/Test
 
-
+### Image processing algorithms
