@@ -11,7 +11,7 @@ European Conference on Computer Vision (ECCV), 2018
 
 [[Project page]](http://vllab.ucmerced.edu/wlai24/video_consistency/)[Paper]
 
-![teaser](http://vllab.ucmerced.edu/wlai24/video_consistency/images/teaser.gif)
+![teaser](http://vllab.ucmerced.edu/wlai24/video_consistency/images/teaser_small.gif)
 
 ### Table of Contents
 1. [Introduction](#introduction)
