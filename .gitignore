@@ -1,0 +1,13 @@
+*.o
+*.so
+*log
+*.pyc
+*.png
+*.ppm
+*.flo
+*.jpg
+*.tar
+*.mp4
+*.pth
+checkpoints/
+data/
