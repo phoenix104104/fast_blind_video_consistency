@@ -43,6 +43,9 @@ If you find the code and datasets useful in your research, please cite:
 
 ### Requirements and dependencies
 - [Pytorch 0.4](https://pytorch.org/)
+- [TensorboardX](https://github.com/lanpa/tensorboardX)
+- [LPIPS](https://github.com/richzhang/PerceptualSimilarity) (for evaluation)
+
 
 ### Dataset
 
@@ -59,3 +62,7 @@ Download repository:
 ### Training and testing
 
 ### Image processing algorithms
+We use the following algorithms to obtain per-frame processed results:
+
+**Style transfer**
+
