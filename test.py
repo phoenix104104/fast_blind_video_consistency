@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
         print("Test %s on %s-%s video %d/%d: %s" %(opts.task, opts.dataset, opts.phase, v + 1, len(video_list), video))
 
-
+        ## setup path
         input_dir = os.path.join(opts.data_dir, opts.phase, "input", opts.dataset, video)
         process_dir = os.path.join(opts.data_dir, opts.phase, "processed", opts.task, opts.dataset, video)
         output_dir = os.path.join(opts.data_dir, opts.phase, "output", opts.method, "epoch_%d" %opts.epoch, opts.task, opts.dataset, video)

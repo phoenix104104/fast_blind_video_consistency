@@ -9,5 +9,9 @@
 *.tar
 *.mp4
 *.pth
-checkpoints/
-data/
+checkpoints
+checkpoints/*
+data
+data/*
+pretrained_models
+pretrained_models/*
