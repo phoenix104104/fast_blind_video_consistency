@@ -61,6 +61,7 @@ Download our training and testing datasets:
 
     cd data
     ./download_data.sh [train | test | all]
+    cd ..
     
 For example, download training data only:
 
@@ -74,14 +75,38 @@ You can also download the results of [Bonneel et al. 2015] and our approach:
 
     ./download_data.sh results
     
+    
 ### Apply pre-trained models
 Download pretrained models (including FlowNet2 and our model):
     
     cd pretrained_models
     ./download_models.sh
+    cd ..
 
+Test pre-trained model:
+
+    python test_pretrained.py -dataset DAVIS -task WCT/wave
+    
+The output frames are saved in `data/test/ECCV18/WCT/wave/DAVIS`.
 
 ### Training and testing
+Train a new model:
+
+    python train.py -datasets_tasks W3_D1_C1_I1
+
+We have specified all the default parameters in train.py. `lists/train_tasks_W3_D1_C1_I1.txt` specifies the dataset-task pairs for training.
+
+Test a model:
+
+    python test.py -method MODEL_NAME -epoch EPOCH -dataset DAVIS -task WCT/wave
+    
+Check the checkpoint folder for the `MODEL_NAME`.
+
+You can also generate results for multiple tasks using the following script:
+
+    python batch_test.py -method MODEL_NAME -epoch EPOCH
+
+which will test all the tasks in `lists/test_tasks.txt`.
 
 
 ### Image Processing Algorithms
