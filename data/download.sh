@@ -6,31 +6,35 @@ if [[ $SET != "train" && $SET != "test" && $SET != "all" && $SET != "results" ]]
     echo "Usage: ./download_dataset.sh SET"
     echo "SET options:"
     echo " \t train   - download training data (25 GB)"
-    echo " \t test    - download testing data ( GB)"
-    echo " \t all     - download both training and testing data ( GB)"
+    echo " \t test    - download testing data (16 GB)"
+    echo " \t all     - download both training and testing data (41 GB)"
     echo " \t results - download results of Bonneel et al. and our aproach ( GB)"
     exit 1
 fi
 
-URL=https://vllab.ucmerced.edu/wlai24/video_consistency/data
+URL=http://vllab.ucmerced.edu/wlai24/video_consistency/data
 
 if [[ $SET == "train" ]]; then
-    wget -N $URL/train.zip -O ./data/train.zip
-    unzip ./data/train.zip -d ./data
+    wget -N $URL/train.zip
+    unzip train.zip
 fi
 
 
 if [[ $SET == "test" ]]; then
-    wget -N $URL/test.zip -O ./data/test.zip
-    unzip ./data/test.zip -d ./data
+    wget -N $URL/test.zip
+    unzip test.zip
 fi
 
 
 if [[ $SET == "all" ]]; then
-    wget -N $URL/train.zip -O ./data/train.zip
-    unzip ./data/train.zip -d ./data
+    wget -N $URL/train.zip
+    unzip train.zip
 
-    wget -N $URL/test.zip -O ./data/test.zip
-    unzip ./data/test.zip -d ./data
+    wget -N $URL/test.zip
+    unzip test.zip
 fi
 
+if [[ $SET == "results" ]]; then
+    wget -N $URL/results.zip
+    unzip results.zip
+fi
