@@ -140,6 +140,9 @@ You can evaluate multiple tasks using the following script:
     python batch_evaluate.py -method output/MODEL_NAME/epoch_N -metric LPIPS
     python batch_evaluate.py -method output/MODEL_NAME/epoch_N -metric WarpError
     
+which will evaluate all the tasks in `lists/test_tasks.txt`.
+
+   
 ### Test on new videos
 To test our model on new videos or applications, please follow the folder structure in `./data`.
 
