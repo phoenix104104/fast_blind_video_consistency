@@ -21,6 +21,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 1. [Dataset](#dataset)
 1. [Apply Pre-trained Models](#apply-pre-trained-models)
 1. [Training and Testing](#training-and-testing)
+1. [Evaluation](#evaluation)
 1. [Image Processing Algorithms](#image-processing-algorithms)
 
 ### Introduction
@@ -98,15 +99,53 @@ We have specified all the default parameters in train.py. `lists/train_tasks_W3_
 
 Test a model:
 
-    python test.py -method MODEL_NAME -epoch EPOCH -dataset DAVIS -task WCT/wave
+    python test.py -method MODEL_NAME -epoch N -dataset DAVIS -task WCT/wave
     
 Check the checkpoint folder for the `MODEL_NAME`.
+The output frames are saved in `data/test/MODEL_NAME/epoch_N/WCT/wave/DAVIS`.
+
 
 You can also generate results for multiple tasks using the following script:
 
-    python batch_test.py -method MODEL_NAME -epoch EPOCH
+    python batch_test.py -method output/MODEL_NAME/epoch_N
 
 which will test all the tasks in `lists/test_tasks.txt`.
+
+
+### Evaluation
+**Temporal Warping Error**
+
+To compute the temporal warping error, we first need to generate optical flow and occlusion masks:
+
+    python compute_flow_occlusion.py -dataset DAVIS -phase test
+
+The flow will be stored in `data/test/fw_flow/DAVIS`. The occlusion masks will be stored in `data/test/fw_occlusion/DAVIS`.
+
+Then, run the evaluation script:
+
+    python evaluate_WarpError.py -method output/MODEL_NAME/epoch_N -task WCT/wave
+    
+**LPIPS**
+
+Download [LPIPS repository](https://github.com/richzhang/PerceptualSimilarity) and change `LPIPS_dir` in evalate_LPIPS.py if necesary (default path is `../LPIPS`).
+
+Run the evaluation script:
+
+    python evaluate_LPIPS.py -method output/MODEL_NAME/epoch_N -task WCT/wave
+
+**Batch evaluation**
+
+You can evaluate multiple tasks using the following script:
+
+    python batch_evaluate.py -method output/MODEL_NAME/epoch_N -metric LPIPS
+    python batch_evaluate.py -method output/MODEL_NAME/epoch_N -metric WarpError
+    
+### Test on new videos
+To test our model on new videos or applications, please follow the folder structure in `./data`.
+
+Given a video, we extract frames named as `%05d.jpg` and save frames in `data/test/input/DATASET/VIDEO`.
+
+The per-frame processed video is stored in `data/test/processed/TASK/DATASET/VIDEO`, where `TASK` is the image processing algorithm applied on the original video.
 
 
 ### Image Processing Algorithms
