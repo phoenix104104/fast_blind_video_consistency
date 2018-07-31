@@ -36,8 +36,11 @@ if __name__ == "__main__":
 
         if not os.path.exists(filename) or opts.redo:
             
-            cmd = "CUDA_VISIBLE_DEVICES=%d python evaluate_%s.py -dataset %s -phase test -task %s -method %s -redo %d" \
-                    %(opts.gpu, opts.metric, dataset, task, opts.method, opts.redo)
+            cmd = "CUDA_VISIBLE_DEVICES=%d python evaluate_%s.py -dataset %s -phase test -task %s -method %s" \
+                    %(opts.gpu, opts.metric, dataset, task, opts.method)
+
+            if opts.redo:
+                cmd += " -redo"
 
             utils.run_cmd(cmd)
 

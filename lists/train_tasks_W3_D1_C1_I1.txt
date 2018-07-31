@@ -3,10 +3,10 @@ DAVIS       WCT/candy
 DAVIS       WCT/sketch
 DAVIS       DBL/expertsA_cm1
 DAVIS       IntrinsicDecomposition/shading
-DAVIS-gray  ECCV16_colorization
+DAVIS-gray  colorization/ECCV16
 videvo      WCT/antimonocromatismo
 videvo      WCT/candy
 videvo      WCT/sketch
 videvo      DBL/expertsA_cm1
-#videvo      IntrinsicDecomposition/shading
-videvo-gray ECCV16_colorization
+videvo      IntrinsicDecomposition/shading
+videvo-gray colorization/ECCV16

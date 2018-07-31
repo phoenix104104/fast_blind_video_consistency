@@ -12,8 +12,8 @@ DAVIS       IntrinsicDecomposition/reflectance
 DAVIS       IntrinsicDecomposition/shading
 DAVIS       CycleGAN/photo2ukiyoe
 DAVIS       CycleGAN/photo2vangogh
-DAVIS-gray  ECCV16_colorization
-DAVIS-gray  Sig16_colorization
+DAVIS-gray  colorization/ECCV16
+DAVIS-gray  colorization/Sig16
 videvo      WCT/antimonocromatismo
 videvo      WCT/asheville
 videvo      WCT/candy
@@ -28,8 +28,8 @@ videvo      IntrinsicDecomposition/reflectance
 videvo      IntrinsicDecomposition/shading
 videvo      CycleGAN/photo2ukiyoe
 videvo      CycleGAN/photo2vangogh
-videvo-gray     ECCV16_colorization
-videvo-gray     Sig16_colorization
+videvo-gray colorization/ECCV16
+videvo-gray colorization/Sig16
 SigAsia15_AutoColors            AutoColors
 SigAsia15_ColorConstancy        ColorConstancy
 SigAsia15_ColorGrading          ColorGrading
