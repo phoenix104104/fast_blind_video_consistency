@@ -12,7 +12,7 @@ if [[ $SET != "train" && $SET != "test" && $SET != "all" && $SET != "results" ]]
     exit 1
 fi
 
-URL=http://vllab.ucmerced.edu/wlai24/video_consistency/data
+URL=http://vllab1.ucmerced.edu/~wlai24/video_consistency/data
 
 if [[ $SET == "train" ]]; then
     wget -N $URL/train.zip
