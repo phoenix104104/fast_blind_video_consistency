@@ -11,7 +11,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 
 [[Project page]](http://vllab.ucmerced.edu/wlai24/video_consistency/)[Paper]
 
-<img src="teaser.gif" width="1000">
+<img src="teaser_small.gif" width="1000">
 
 ### Table of Contents
 1. [Introduction](#introduction)
