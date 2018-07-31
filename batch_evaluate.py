@@ -8,7 +8,6 @@ if __name__ == "__main__":
 
     ### model options
     parser.add_argument('-method',      type=str,       required=True,    help='full model name')
-    parser.add_argument('-epoch',       type=int,       default=-1,       help='model epoch')
     parser.add_argument('-gpu',         type=int,       default=0,        help='gpu device id')
     parser.add_argument('-metric',      type=str,       required=True,    choices=["LPIPS", "WarpError"])
     parser.add_argument('-redo',        action="store_true",              help='redo evaluation')
@@ -16,8 +15,6 @@ if __name__ == "__main__":
     opts = parser.parse_args()
     print(opts)
 
-    if opts.epoch != -1:
-        opts.method = os.path.join("output", opts.method, "epoch_%d" %opts.epoch)
 
     filename = "lists/test_tasks.txt"
     with open(filename) as f:
