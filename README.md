@@ -1,4 +1,4 @@
-# Learning Blind Video Temporal Consistency (ECCV 2018) 
+# Learning Blind Video Temporal Consistency
 
 [Wei-Sheng Lai](http://graduatestudents.ucmerced.edu/wlai24/), 
 [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), 
