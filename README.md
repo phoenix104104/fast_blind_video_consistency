@@ -72,7 +72,7 @@ Download both training and testing data:
 
     ./download_data.sh all
     
-You can also download the results of [Bonneel et al. 2015] and our approach:
+You can also download the results of [[Bonneel et al. 2015]](https://perso.liris.cnrs.fr/nicolas.bonneel/consistency/) and our approach:
 
     ./download_data.sh results
     
