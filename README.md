@@ -15,7 +15,6 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 
 ### Table of Contents
 1. [Introduction](#introduction)
-1. [Citation](#citation)
 1. [Requirements and Dependencies](#requirements-and-dependencies)
 1. [Installation](#installation)
 1. [Dataset](#dataset)
@@ -23,22 +22,12 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 1. [Training and Testing](#training-and-testing)
 1. [Evaluation](#evaluation)
 1. [Image Processing Algorithms](#image-processing-algorithms)
+1. [Citation](#citation)
+
 
 ### Introduction
 Our method takes the original unprocessed and per-frame processed videos as inputs to produce a temporally consistent video. Our approach is agnostic to specific image processing algorithms applied on the original video.
 
-
-### Citation
-
-If you find the code and datasets useful in your research, please cite:
-    
-    @inproceedings{Lai-ECCV-2018,
-        author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Wang, Oliver and Shechtman, Eli and Yumer, Ersin and Yang, Ming-Hsuan}, 
-        title     = {Learning Blind Video Temporal Consistency}, 
-        booktitle = {European Conference on Computer Vision},
-        year      = {2018}
-    }
-    
 
 ### Requirements and dependencies
 - [Pytorch 0.4](https://pytorch.org/)
@@ -48,6 +37,7 @@ If you find the code and datasets useful in your research, please cite:
 
 Our code is tested on Ubuntu 16.04 with cuda 9.0 and cudnn 7.0.
 
+
 ### Installation
 Download repository:
 
@@ -56,6 +46,7 @@ Download repository:
 Compile FlowNet2 dependencies (correlation, resample, and channel norm layers):
 
     ./install.sh
+
 
 ### Dataset
 Download our training and testing datasets:
@@ -89,6 +80,7 @@ Test pre-trained model:
     python test_pretrained.py -dataset DAVIS -task WCT/wave
     
 The output frames are saved in `data/test/ECCV18/WCT/wave/DAVIS`.
+
 
 ### Training and testing
 Train a new model:
@@ -170,3 +162,16 @@ We use the following algorithms to obtain per-frame processed results:
 **Colorization**
 - [Colorful Image Colorization, ECCV 2016](https://github.com/richzhang/colorization)
 - [Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification, Siggraph 2016](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/en/)
+
+
+### Citation
+
+If you find the code and datasets useful in your research, please cite:
+    
+    @inproceedings{Lai-ECCV-2018,
+        author    = {Lai, Wei-Sheng and Huang, Jia-Bin and Wang, Oliver and Shechtman, Eli and Yumer, Ersin and Yang, Ming-Hsuan}, 
+        title     = {Learning Blind Video Temporal Consistency}, 
+        booktitle = {European Conference on Computer Vision},
+        year      = {2018}
+    }
+    
