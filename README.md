@@ -9,7 +9,7 @@ and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/)
 
 [European Conference on Computer Vision (ECCV), 2018](https://eccv2018.org/)
 
-[[Project page]](http://vllab.ucmerced.edu/wlai24/video_consistency/)[Paper]
+[[Project page]](http://vllab.ucmerced.edu/wlai24/video_consistency/)[[Paper]](http://arxiv.org/abs/1808.00449)
 
 <img src="teaser_small.gif" width="1000">
 
