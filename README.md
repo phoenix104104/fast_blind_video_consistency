@@ -30,7 +30,7 @@ Our method takes the original unprocessed and per-frame processed videos as inpu
 
 
 ### Requirements and dependencies
-- [Pytorch 0.4](https://pytorch.org/)
+- [Pytorch 0.4.0](https://pytorch.org/) (FlowNet2 dependencies cannot be compiled on Pytorch 0.4.1)
 - [TensorboardX](https://github.com/lanpa/tensorboardX)
 - [FlowNet2-Pytorch](https://github.com/NVIDIA/flownet2-pytorch) (Code and model are already included in this repository)
 - [LPIPS](https://github.com/richzhang/PerceptualSimilarity) (for evaluation)
