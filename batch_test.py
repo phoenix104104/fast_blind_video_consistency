@@ -19,6 +19,7 @@ if __name__ == "__main__":
             if line[0] != "#":
                 dataset_task_list.append(line.rstrip().split())
 
+
     if opts.reverse:
         dataset_task_list.reverse()
 

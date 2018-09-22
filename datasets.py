@@ -38,7 +38,7 @@ class MultiFramesDataset(data.Dataset):
         self.num_frames = []
         self.dataset_task_list = []
 
-        list_filename = os.path.join(opts.list_dir, "training_tasks_%s.txt" %(opts.datasets_tasks))
+        list_filename = os.path.join(opts.list_dir, "train_tasks_%s.txt" %(opts.datasets_tasks))
         with open(list_filename) as f:
             for line in f.readlines():
                 if line[0] != "#":

@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
 
     ### load model opts
-    opts_filename = os.path.join('pretrained_models', "ECCV18_blind_consistency_opts.pth")
+    opts_filename = os.path.join('pretrained_models', "ECCV18_model_opts.pth")
     print("Load %s" %opts_filename)
     with open(opts_filename, 'r') as f:
         model_opts = pickle.load(f)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
 
     ### load trained model
-    model_filename = os.path.join('pretrained_models', "ECCV18_blind_consistency.pth")
+    model_filename = os.path.join('pretrained_models', "ECCV18_model.pth")
     print("Load %s" %model_filename)
     state_dict = torch.load(model_filename)
     model.load_state_dict(state_dict['model'])
@@ -134,7 +134,7 @@ if __name__ == "__main__":
                 frame_p2 = utils.img2tensor(frame_p2).to(device)
                 
                 ### model input
-                inputs = torch.cat((frame_p2, frame_o1, frame_i2, frame_o1), dim=1)
+                inputs = torch.cat((frame_p2, frame_o1, frame_i2, frame_i1), dim=1)
                 
                 ### forward
                 ts = time.time()

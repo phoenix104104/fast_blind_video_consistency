@@ -139,7 +139,7 @@ if __name__ == "__main__":
                 frame_p2 = utils.img2tensor(frame_p2).to(device)
                 
                 ### model input
-                inputs = torch.cat((frame_p2, frame_o1, frame_i2, frame_o1), dim=1)
+                inputs = torch.cat((frame_p2, frame_o1, frame_i2, frame_i1), dim=1)
                 
                 ### forward
                 ts = time.time()

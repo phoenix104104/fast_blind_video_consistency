@@ -23,7 +23,7 @@ if __name__ == "__main__":
             if line[0] != "#":
                 dataset_task_list.append(line.rstrip().split())
 
-    
+
     for i in range(len(dataset_task_list)):
 
         dataset = dataset_task_list[i][0]
