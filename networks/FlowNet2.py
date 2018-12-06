@@ -8,10 +8,10 @@ import numpy as np
 from resample2d_package.modules.resample2d import Resample2d
 from channelnorm_package.modules.channelnorm import ChannelNorm
 
-import FlowNetC
-import FlowNetS
-import FlowNetSD
-import FlowNetFusion
+from .import FlowNetC
+from .import FlowNetS
+from .import FlowNetSD
+from .import FlowNetFusion
 
 from submodules import *
 'Parameter count = 162,518,834'
